@@ -1,0 +1,23 @@
+{
+  "name": "agenciaSite",
+  "homepage": "https://github.com/KalleoPinheiro/agenciaSite",
+  "authors": [
+    "Kalleo Pinheiro <kalleopinheiro@hotmail.com>"
+  ],
+  "description": "Site institucional da Agência Mais",
+  "main": "index.html",
+  "keywords": [
+    "site",
+    "agencia",
+    "mais"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
