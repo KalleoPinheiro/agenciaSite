@@ -1,5 +1,19 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');
+var watch = require('gulp-watch');
 
-gulp.task('default', function() {
-  concole.log('Olá');
+//task para o sass
+gulp.task('sass', function () {
+ return gulp.src('./sass/**/*.sass')
+   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+   .pipe(gulp.dest('./css'));
 });
+
+//task default do Gulp
+	gulp.task('watch', function(){
+	gulp.watch('./sass/**/*.sass', ['sass']);
+});
+
+
+//task default do Gulp
+gulp.task('default', ['sass', 'watch']);

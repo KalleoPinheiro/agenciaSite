@@ -18,6 +18,14 @@
   "homepage": "https://github.com/KalleoPinheiro/agenciaSite#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-install": "^0.6.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-install": "^0.6.0"
   }
 }
