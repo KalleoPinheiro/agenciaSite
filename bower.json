@@ -19,5 +19,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.0"
+  }
 }
