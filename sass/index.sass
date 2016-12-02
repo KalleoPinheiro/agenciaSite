@@ -1,8 +1,49 @@
 @import molecules/mixins
-
-@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
 
-@import templates/index
 
+body
+	header
+		+clearfix
+		background:
+			image: url("../images/slider_principal.jpg")
+			position:
+			attachment:
+			size: 
+
+		.logo
+			float: left
+			img
+				width: 225px
+				height: 75px
+
+		.links
+			float: right
+
+			nav,
+			.social
+				display: inline-block
+
+			nav
+				ul
+					li
+						display: inline-block
+						margin-left: 30px
+
+						a 
+							color: $azul
+							text-transform: uppercase
+							
+			.social
+				float: right
+				li
+					display: inline-block
+					margin-left: 10px
+					a 
+						color: $preto
+
+		h1
+
+		p
