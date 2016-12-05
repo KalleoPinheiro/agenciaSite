@@ -1,4 +1,5 @@
 @import molecules/mixins
+@import molecules/reset
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint
@@ -7,17 +8,36 @@
 body
 	header
 		+clearfix
+		min-width: 100%
+		min-height: 800px
 		background:
 			image: url("../images/slider_principal.jpg")
-			position:
-			attachment:
-			size: 
+			position: top center
+			repeat: no-repeat
+			color: $azul
+			attachment: fixed
+			size: cover 
+
+		.barra-menu
+			background-color: rgb(255, 255, 255)
+			opacity: 0.702
+			min-width: auto
+			height: 90px
+			position: fixed
+			right: 0
+			left: 0
+			top: 0px
+
 
 		.logo
 			float: left
 			img
 				width: 225px
 				height: 75px
+				margin-top: 5px
+
+		.links
+			margin-top: 20px
 
 		.links
 			float: right
@@ -35,6 +55,8 @@ body
 						a 
 							color: $azul
 							text-transform: uppercase
+							font-family: Amatic SC
+							font-size: 30px
 							
 			.social
 				float: right
@@ -43,7 +65,15 @@ body
 					margin-left: 10px
 					a 
 						color: $preto
+						display: block
 
-		h1
+		.contentHeader
+			margin-top: 100px
 
-		p
+			h1
+				clear: both
+
+			h1
+
+
+			p
