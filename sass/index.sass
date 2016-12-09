@@ -4,11 +4,8 @@
 @import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
 @import ../bower_components/breakpoint-sass/stylesheets/breakpoint
 @import ../bower_components/font-awesome/scss/font-awesome
-<<<<<<< HEAD
 @import ../bower_components/sass-flex-mixin/flex
 
-=======
->>>>>>> cc9cbfb8ea4f960357a88f14751248549064968e
 
 body
 	header
@@ -108,55 +105,47 @@ body
 
 
 	footer
+		+clearfix
 		background-color: $verde
 		min-width: 100%
 		min-height: 200px
 
-		&:before 
-			content: ""
-			display: block
-			width: 100%
-			height: 35px
-			+gradient(180deg, $branco, transparent)
-
-		p
-			text-align: center
-			margin-top: 50px
 
 		.logoFooter
-			margin-top: 50px
-			margin-left: 25px
 			img	
 
-		.contatos
-			margin-top: 15px
-			margin-left: 25px
-
-			p 
-				text-align: center
-				display: inline-block
-				margin-left: 10px
-				line-height: 12px
-				font-size: 25px
-
-				i
-					display: block
-					
 		
-		.redesSociais
-			margin-top: 60px
-			li
-				display: inline-block
-				margin-left: 30px
-				a 
-					color: $preto
-					display: block
-					text-align: center
-					margin-top: 7px
-					+breakpoint($celular)
-						margin-left: 25px
+		.contatos
+			ul	
+				li
+					display: table
+					margin-left: 10px
+					i
+						display: inline-block
+						p 
+							display:block
+							color: $preto
+							text-align: center
+			
 		
 		.backTopo
 			float: right
 
-			img
+			.redesSociais
+				clear: both
+				display: table 	
+				li
+					display: inline-block
+					margin-left: 30px
+					a 
+						color: $preto
+						display: table
+						text-align: center
+						
+						+breakpoint($celular)
+
+		.textoRodape
+			p 
+				text-align: center
+				margin-top: 50px
+		
