@@ -13,6 +13,10 @@ body
 		min-width: 100%
 		min-height: 800px
 
+		+breakpoint($celular)
+			+clearfix
+			clear: both
+
 		background:
 			image: url("../images/slider_principal.jpg")
 			position: top center
@@ -23,7 +27,7 @@ body
 		
 		+breakpoint($celular)
 			min-width: 100%
-			min-height: 700px
+			min-height: 50%
 		
 		.barraMenu
 			background-color: rgba(255, 255, 255, 0.900)
@@ -32,9 +36,11 @@ body
 			height: 90px
 			padding-left: 100px
 			padding-right: 100px
+
 			+breakpoint($celular)
 				padding-left: 0
 				padding-right: 0
+				min-width: 100%
 			
 
 
@@ -46,6 +52,10 @@ body
 				height: 75px
 				margin-top: 5px
 
+			+breakpoint($celular)
+				margin-left: 15px
+
+
 		.links
 			float: right
 			margin-top: 20px
@@ -53,6 +63,12 @@ body
 			nav,
 			.social
 				display: inline-block
+
+				+breakpoint($tablet)
+					display: none
+
+				+breakpoint($celular)
+					display: none
 				
 			nav
 				+breakpoint($tablet)
@@ -75,9 +91,11 @@ body
 							
 			.social
 				float: right
+
 				li
 					display: inline-block
 					margin-left: 30px
+
 					a 
 						color: $preto
 						display: block
@@ -93,11 +111,12 @@ body
 				text-align: center
 				font-size: 5em
 				color: #1b1464
+
 				+breakpoint($celular)
-					+font-size(40px)
+					+font-size(25px)
 					letter-spacing: 3px
-					line-height: 40px
-					margin-top: 160px
+					line-height: 20px
+					margin-top: 90px
 
 
 
@@ -109,43 +128,98 @@ body
 		background-color: $verde
 		min-width: 100%
 		min-height: 200px
+		margin-top: 50px
 
+		+breakpoint($celular)
+			+clearfix
+			clear: both
+			margin-top: 30px
+
+		.container
+			margin-top: 50px
+		
+			+breakpoint($celular)
+				+clearfix
+				clear: both
+				margin-top: 5px
 
 		.logoFooter
-			img	
+			img
+				margin-left: 20px
+				width: 225px
+				height: 75px
+				margin-top: 5px
 
-		
+				+breakpoint($celular)
+				+clearfix
+				clear: both
+
+
 		.contatos
-			ul	
+			+breakpoint($celular)
+				
+				margin: 20px
+
+			ul
+				+clearfix
+				clear: both
+				text-align: center
 				li
-					display: table
-					margin-left: 10px
-					i
-						display: inline-block
-						p 
-							display:block
-							color: $preto
-							text-align: center
-			
+					display: inline-block
+					padding: 10px
+
+			p 
+				color: $preto
+				font-size: 20px
+
+			i 	
+				
 		
+
 		.backTopo
 			float: right
+			text-align: center
+
+			+breakpoint($celular)
+				float: none
+				text-align: center
 
 			.redesSociais
 				clear: both
-				display: table 	
+				text-align: center
+
 				li
+					+clearfix
+					clear: both
 					display: inline-block
-					margin-left: 30px
+					text-align: center
+					+justify-content(space-around)
+					+align-items(center)
+					padding: 10px
+					position: relative
+
+					+breakpoint($celular)
+					+clearfix
+					clear: both
+					text-align: center
+
 					a 
 						color: $preto
 						display: table
 						text-align: center
-						
-						+breakpoint($celular)
+
+					p 
+						text-align: center
+
 
 		.textoRodape
 			p 
 				text-align: center
-				margin-top: 50px
+				margin-top: 30px
+
+				+breakpoint($celular)
+					margin-top: 10px
+					text-align: center
+					font-size: 10px
+
 		
