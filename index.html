@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <a name= "inicio">
+      <a name= "inicio" id="inicio">
         <div class="container">
           <div class="barraMenu navbar-fixed-top">
             <div class="logo img-responsive">
@@ -24,11 +24,11 @@
             <div class="links">
               <nav>
                 <ul>
-                  <li><a href="index.html">Início</a></li>
-                  <li><a href="#servicos">Serviços</a></li>
-                  <li><a href="#portifolio">Portifólio</a></li>
-                  <li><a href="#agencia">Agência</a></li>
-                  <li><a href="#orcamento">Orçamento</a></li>
+                  <li><a href="#inicio" class="scroll">Início</a></li>
+                  <li><a href="#servicos" class="scroll">Serviços</a></li>
+                  <li><a href="#portifolio" class="scroll">Portifólio</a></li>
+                  <li><a href="#agencia" class="scroll">Agência</a></li>
+                  <li><a href="#orcamento" class="scroll">Orçamento</a></li>
                 </ul>
               </nav>
               <ul class="social">
@@ -56,20 +56,21 @@
         </div>
       </a>
     </header>
-    <section class="servicos container">
-      <a name= "servicos">
-        <div class="seta-01 img-responsive">
-          <img src="images/seta-01.png" alt="Seta direção serviços - Agência Mais">
-        </div>
-        <h1>Serviços</h1>
-        <!-- <div class="seta-02">
-          <img src="images/seta-02.png" alt="Seta direção serviços - Agência Mais">
-        </div> -->
-        <div class="slider">
-          <img class="Slides img-responsive" src="images/Serviços_midias.jpg">
-          <img class="Slides img-responsive" src="images/Serviços_websites.jpg">
-          <img class="Slides img-responsive" src="images/Serviços_jornalismo.jpg">
-          <img class="Slides img-responsive" src="images/Serviços_marketingDigital.jpg">
+    <section class="servicos">
+      <a name= "servicos" id="servicos">
+        <div class="container">
+          <div class="seta-01 img-responsive">
+            <img src="images/seta-01.png" alt="Seta direção serviços - Agência Mais">
+          </div>
+          <h1>Serviços</h1>
+          <div class="seta-02">
+            <div class="slider">
+              <img class="Slides img-responsive" src="images/Serviços_midias.jpg">
+              <img class="Slides img-responsive" src="images/Serviços_websites.jpg">
+              <img class="Slides img-responsive" src="images/Serviços_jornalismo.jpg">
+              <img class="Slides img-responsive" src="images/Serviços_marketingDigital.jpg">
+            </div>
+          </div>
         </div>
         <div class="bannerAgenciamento">
           <h1>
@@ -79,126 +80,135 @@
           </h1>
         </div>
       </a>
-    </div>
-  </section>
-  <!--
-  <section class="portifolio container">
-    <a name= "portifolio">
-      <h1>Portifólio</h1>
-      <h2>Vinheta para Painéis de Led e mídias indoor</h2>
-      <br>
-      <video width="320" height="240" controls>
-        <source src="videos/Colégio do Carmo -03-10-16.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p><strong>Cliente: Colégio Cenecista Nossa Senhora do Carmo</strong></p>
-      <br>
-      <br>
-      <img src="images/template_agenciaMaisSite.jpg" alt="Foto site www.vitrinemais.tv">
-      <img src="images/botaoSite.png" alt="Visite o site: www.vitrinemais.tv">
-    </a>
-  </section>
-  <section class="agencia container">
-    <a name= "agencia">
-      <h1>Sobre Nós</h1>
-      <p>Somos empreendedores, inquietos e ousados. Nosso objetivo é entender e atender às suas necessidades de comunicação.
-        Desenvolvemos soluções de comunicação integrada e sob medida, sempre alinhadas ao seu negócio e aos interesses dos seus públicos-alvo. Isso é o que a gente sabe fazer.
-        São mais de 10 anos oritentando e ajudando clientes de vários segmentos a construir e valorizar suas marcas. Somos pioneiros em divulgação e propagandas através de painéis de Led, jornalismo e marketing digital...
-      Atuamos de forma multidisciplinar, por meio de um portfólio completo de soluções, adaptadas a cada tipo de negócio.</p>
-      <br>
-      <h1>Equipe Mais</h1>
-      <div class="equipe">
-        <ul>
-          <li>
-            <img src="images/thumbEquipe.png" alt="">
-          </li>
-          <li>
-            <img src="images/thumbEquipe.png" alt="">
-          </li>
-        </ul>
-      </div>
-      <br>
-      <h1>Como nos encontrar</h1>
-      <br>
-      <p>Estamos localizados na cidade de Unaí MG, exatamente na rua Juvêncio Corrêa, nº 331.
-        Venha nos prestigiar com sua presença e conheça nossos serviços, escritório, equipe e nosso trabalho! Venha conferir....
-      </p>
-      <div class="mapa">
-        <span>Mapa do google here!</span>
-      </div><br>
-    </a>
-  </section>
-  <section class="orcamento container">
-    <a name= "orcamento">
-      <h1>Faça um orçamento</h1>
-      <form>
-        <div class="form-group">
-          <input type="input" class="form-control" id="exampleInputName1" placeholder="Nome">
+      
+    </section>
+    <!--
+    <section class="portifolio container">
+      <a name= "portifolio" id="portifolio">
+        <h1>Portifólio</h1>
+        <h2>Vinheta para Painéis de Led e mídias indoor</h2>
+        <br>
+        <video width="320" height="240" controls>
+          <source src="videos/Colégio do Carmo -03-10-16.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>Cliente: Colégio Cenecista Nossa Senhora do Carmo</strong></p>
+        <br>
+        <br>
+        <img src="images/template_agenciaMaisSite.jpg" alt="Foto site www.vitrinemais.tv">
+        <img src="images/botaoSite.png" alt="Visite o site: www.vitrinemais.tv">
+      </a>
+    </section>
+    <section class="agencia container">
+      <a name= "agencia" id="agencia">
+        <h1>Sobre Nós</h1>
+        <p>Somos empreendedores, inquietos e ousados. Nosso objetivo é entender e atender às suas necessidades de comunicação.
+          Desenvolvemos soluções de comunicação integrada e sob medida, sempre alinhadas ao seu negócio e aos interesses dos seus públicos-alvo. Isso é o que a gente sabe fazer.
+          São mais de 10 anos oritentando e ajudando clientes de vários segmentos a construir e valorizar suas marcas. Somos pioneiros em divulgação e propagandas através de painéis de Led, jornalismo e marketing digital...
+        Atuamos de forma multidisciplinar, por meio de um portfólio completo de soluções, adaptadas a cada tipo de negócio.</p>
+        <br>
+        <h1>Equipe Mais</h1>
+        <div class="equipe">
+          <ul>
+            <li>
+              <img src="images/thumbEquipe.png" alt="">
+            </li>
+            <li>
+              <img src="images/thumbEquipe.png" alt="">
+            </li>
+          </ul>
         </div>
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <br>
+        <h1>Como nos encontrar</h1>
+        <br>
+        <p>Estamos localizados na cidade de Unaí MG, exatamente na rua Juvêncio Corrêa, nº 331.
+          Venha nos prestigiar com sua presença e conheça nossos serviços, escritório, equipe e nosso trabalho! Venha conferir....
+        </p>
+        <div class="mapa">
+          <span>Mapa do google here!</span>
+        </div><br>
+      </a>
+    </section>
+    <section class="orcamento container">
+      <a name= "orcamento" id="orcamento">
+        <h1>Faça um orçamento</h1>
+        <form>
+          <div class="form-group">
+            <input type="input" class="form-control" id="exampleInputName1" placeholder="Nome">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="input" class="form-control" id="exampleInputAssunto1" placeholder="Assunto">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleUnputMenssagem1" placeholder="Menssagem">
+          </div>
+          <button type="submit" class="btn btn-default">Enviar</button>
+        </form>
+      </a>
+    </section>
+    -->
+    <footer>
+      <div class="container">
+        <div class="col-md-4 logoFooter">
+          <img src="images/logo_agenciaMais.png" alt="Logo de rodapé Agência Mais">
         </div>
-        <div class="form-group">
-          <input type="input" class="form-control" id="exampleInputAssunto1" placeholder="Assunto">
+        <div class="col-md-4 contatos">
+          <ul class="redesSociais">
+            <li>
+              <i class="fa fa-phone fa-3x"></i><p>(38) 3676-7630</p>
+            </li>
+            <li>
+              <i class="fa fa-whatsapp fa-3x"></i><p>(38) 9.8808-9166</p>
+            </li>
+          </ul>
         </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="exampleUnputMenssagem1" placeholder="Menssagem">
+        <div class="col-md-4 backTopo">
+          <ul class="redesSociais">
+            <li>
+              <a href="https://www.youtube.com/user/maisunai"><i class="fa fa-youtube fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="https://pt-br.facebook.com/agenciamaiscomunicacao?hc_location=timeline&filter=1"><i class="fa fa-facebook-square fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/vitrine.mais/?hl=pt-br"><i class="fa fa-instagram fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="#inicio"><img src="images/btn_voltarAoTopo.png" alt="Voltar ao topo"></a>
+            </li>
+          </ul>
         </div>
-        <button type="submit" class="btn btn-default">Enviar</button>
-      </form>
-    </a>
-  </section>
-  -->
-  <footer>
-    <div class="container">
-      <div class="col-md-4 logoFooter">
-        <img src="images/logo_agenciaMais.png" alt="Logo de rodapé Agência Mais">
+        <div class="col-md-12 textoRodape">
+          <p>© 2016 Afonso Almeida Videocomunicação Ltda - CNPJ 02.524.026/0001-64 - por Kalléo Pinheiro - Agência Mais</p>
+        </div>
       </div>
-      <div class="col-md-4 contatos">
-        <ul class="redesSociais">
-          <li>
-            <i class="fa fa-phone fa-3x"></i><p>(38) 3676-7630</p>
-          </li>
-          <li>
-            <i class="fa fa-whatsapp fa-3x"></i><p>(38) 9.8808-9166</p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4 backTopo">
-        <ul class="redesSociais">
-          <li>
-            <a href="https://www.youtube.com/user/maisunai"><i class="fa fa-youtube fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://pt-br.facebook.com/agenciamaiscomunicacao?hc_location=timeline&filter=1"><i class="fa fa-facebook-square fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/vitrine.mais/?hl=pt-br"><i class="fa fa-instagram fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="#inicio"><img src="images/btn_voltarAoTopo.png" alt="Voltar ao topo"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-12 textoRodape">
-        <p>© 2016 Afonso Almeida Videocomunicação Ltda - CNPJ 02.524.026/0001-64 - por Kalléo Pinheiro - Agência Mais</p>
-      </div>
-    </div>
-  </footer>
-  <script>
-  var slideIndex = 0;
-  carousel();
-  function carousel() {
-  var i;
-  var x = document.getElementsByClassName("Slides");
-  for (i = 0; i < x.length; i++) {
-  x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 3000); // Change image every 2 seconds
-  }
-  </script>
-</body>
+    </footer>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+    <script>
+      var slideIndex = 0;
+      carousel();
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("Slides");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Muda a imagem a cada 3 segundos
+      }
+
+
+      jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+   });
+});
+    </script>
+  </body>
 </html>
