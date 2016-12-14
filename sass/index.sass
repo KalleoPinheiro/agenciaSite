@@ -121,13 +121,6 @@ body
 					line-height: 20px
 					margin-top: 90px
 
-
-
-
-
-
-
-
 	footer
 		+clearfix
 		background-color: $verde
@@ -229,7 +222,7 @@ body
 					text-align: center
 					font-size: 10px
 
-	section
+	section.servicos
 		.seta-01
 			+clearfix
 			clear: both
@@ -270,7 +263,7 @@ body
 				image: url("../images/seta-02.png")
 				position: center top
 				repeat: no-repeat
-
+			position: absolute
 
 		.bannerAgenciamento
 			+clearfix
@@ -282,6 +275,7 @@ body
 				repeat: no-repeat
 				attachment: fixed
 				size: 100% 100%
+			margin-top: 409px
 
 
 
@@ -289,6 +283,7 @@ body
 				+clearfix
 				clear: both
 				display: table
+				float: right
 				border: 5px solid $preto
 				font-weight: bold
 				padding: 10px
@@ -296,7 +291,166 @@ body
 				text-transform: uppercase
 				font-family: Open Sans
 				+font-size(70px)
-				margin-top: 450px
-				margin-right: 100px
+				margin-top: 285px
+				margin-right: 277px
 				text-align: center
 			
+	
+	section.portifolio
+
+		.seta-03
+			+clearfix
+			min-width: 331px
+			min-height: 586px
+			clear: both
+			background:
+				image: url("../images/seta-03.png")
+				position: center top
+				repeat: no-repeat
+			position: absolute	
+			margin-left: 242px
+			margin-top: -90px
+
+		h1
+			+clearfix
+			clear: both
+			margin-left: 400px
+			margin-top: 140px
+			color: $preto
+			text-transform: uppercase
+			font-family: Nissan Brand Light
+			+font-size(70px)
+
+		.seta-04
+			+clearfix
+			min-width: 331px
+			min-height: 730px
+			clear: both
+			float: left
+			background:
+				image: url("../images/seta-04.png")
+				position: center top
+				repeat: no-repeat
+			position: absolute
+			margin-left: 260px
+
+
+		.contentPortifolio
+			float: right
+			display: block 
+			position: relative
+			margin-left: 120px
+
+
+			h2
+				+font-size(50px)
+				margin-right: 80px
+
+			video 
+				margin-left: 100px
+
+			p 
+				margin-left: 100px
+
+		img 	
+			margin-left: 100px
+
+		.btn-2 	
+			margin-top: -20px
+			margin-left: 340px
+	
+	
+
+	section.agencia
+		.seta-05
+			+clearfix
+			min-width: 331px
+			min-height: 730px
+			clear: both
+			float: left
+			background:
+				image: url("../images/seta-05.png")
+				position: center top
+				repeat: no-repeat
+			position: absolute
+			margin-left: 240px
+			margin-top: 160px
+
+		.contentAgencia
+			float: right
+			display: table 
+			position: relative
+
+			h1
+				+clearfix
+				clear: both
+				margin-left: 394px
+				margin-top: 90px
+				color: $preto
+				text-transform: uppercase
+				font-family: Nissan Brand Light
+				+font-size(70px)
+
+			p 	
+				display: table
+				border: 1px solid
+				padding: 20px
+				color: $preto
+				text-align: justify
+				+font-size(30px)
+				margin-left: 450px
+				margin-top: 25px
+				margin-bottom: 50px
+		h1
+				+clearfix
+				clear: both
+				margin-left: 394px
+				margin-top: 110px
+				color: $preto
+				text-transform: uppercase
+				font-family: Nissan Brand Light
+				+font-size(70px)
+
+		.mapa
+			+clearfix
+			min-width: 100%
+			background:
+				position: top center
+				repeat: no-repeat
+				attachment: fixed
+				size: cover
+			justify-content: center
+			+flexbox
+			+justify-content(space-around)
+			+align-items(center)
+
+		p 	
+			display: table
+			border: 1px solid
+			padding: 20px
+			color: $preto
+			text-align: justify
+			+font-size(30px)
+			margin-left: 450px
+			margin-top: 25px
+			margin-bottom: 50px
+
+		.seta-07
+			+clearfix
+			min-width: 331px
+			min-height: 7000px
+			clear: both
+			float: left
+			background:
+				image: url("../images/seta-07.png")
+				position: center top
+				repeat: no-repeat
+			position: absolute
+			margin-left: 280px
+
+
+	section.orcamento
+		+clearfix
+		background-color: $preto
+		min-width: 100%
+		min-height: 400px
