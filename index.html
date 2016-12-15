@@ -10,6 +10,7 @@
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/plugins.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
     <header>
@@ -203,25 +204,27 @@
       </div>
     </footer>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
     var slideIndex = 0;
     carousel();
     function carousel() {
     var i;
     var x = document.getElementsByClassName("Slides");
-    for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Muda a imagem a cada 3 segundos
     }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 3000); // Muda a imagem a cada 3 segundos
-    }
+
     jQuery(document).ready(function($) {
-    $(".scroll").click(function(event){
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
-    });
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+      });
     });
     </script>
   </body>
