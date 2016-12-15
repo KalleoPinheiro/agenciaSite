@@ -28,6 +28,10 @@ body
 		+breakpoint($celular)
 			min-width: 100%
 			min-height: 50%
+
+		+breakpoint($tablet)
+			min-width: 100%
+			min-height: 25%
 		
 		.barraMenu
 			background-color: rgba(255, 255, 255, 0.950)
@@ -79,22 +83,32 @@ body
 
 
 				ul
+
 					li
 						display: inline-block
 						margin-left: 30px
+
+						+breakpoint($tablet)
+							margin-left: 0px
 
 						a 
 							color: $azul
 							font-family: alienleague
 							text-transform: lowercase
 							font-size: 30px
-							
+
+						+breakpoint($tablet)
+							font-size: 20px
+
 			.social
 				float: right
 
 				li
 					display: inline-block
 					margin-left: 30px
+
+					+breakpoint($tablet)
+						margin-left: 10px
 
 					a 
 						color: $preto
@@ -115,6 +129,13 @@ body
 				+font-size(95px)
 				color: #1b1464
 
+				+breakpoint($tablet)
+					+font-size(60px)
+					letter-spacing: 3px
+					line-height: 40px
+					margin-top: 100px
+
+					
 				+breakpoint($celular)
 					+font-size(25px)
 					letter-spacing: 3px
@@ -126,7 +147,7 @@ body
 		background-color: $verde
 		min-width: 100%
 		min-height: 200px
-		margin-top: 50px
+		margin-top: 5px
 
 		+breakpoint($celular)
 			+clearfix
@@ -438,7 +459,7 @@ body
 		.seta-07
 			+clearfix
 			min-width: 331px
-			min-height: 7000px
+			min-height: 70px
 			clear: both
 			float: left
 			background:
@@ -453,4 +474,36 @@ body
 		+clearfix
 		background-color: $preto
 		min-width: 100%
-		min-height: 400px
+		min-height: 500px
+		margin-top: 120px
+		
+		h1
+				+clearfix
+				clear: both
+				margin-left: 394px
+				margin-top: 50px
+				color: white
+				text-transform: uppercase
+				font-family: Nissan Brand Light
+				+font-size(70px)
+
+		.seta-08
+			+clearfix
+			min-width: 331px
+			min-height: 500px
+			clear: both
+			float: left
+			background:
+				image: url("../images/seta-08.png")
+				position: center top
+				repeat: no-repeat
+			position: absolute
+			margin-left: 240px
+			margin-top: -205px
+		
+		.formOrcamento
+			width: 300px
+			height: auto
+			margin-left: auto 
+			margin-right: auto
+			margin-top: 30px
