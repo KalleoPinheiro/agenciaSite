@@ -355,28 +355,36 @@ body
 			font-family: Nissan Brand Light
 			+font-size(70px)
 
-		.slider
-			+clearfix
-			clear: both
-			+flexbox
-			+justify-content(space-around)
-			+align-items(center)
-			+make-sm-column(8)
-			+make-sm-column-offset(2)
-			margin-bottom: 100px
-			margin-top: 40px
-
 
 		.seta-02
 			+clearfix
-			min-width: 331px
-			min-height: 586px
 			clear: both
+			min-width: 100%
+			min-height: 600px
+			position: relative
 			background:
 				image: url("../images/seta-02.png")
-				position: center top
+				position: top
 				repeat: no-repeat
-			position: absolute
+
+			.itemServicos
+				+flexbox
+				+align-items(center)
+				+justify-content(center)
+				margin-top: 25px
+				[class^="icone-"]
+					padding: 20px
+
+					+breakpoint($tablet)
+						padding: 5px
+
+					+breakpoint($celular)
+						padding: none
+
+				+breakpoint($tablet)
+
+				+breakpoint($celular)
+					display: block
 
 		.bannerAgenciamento
 			+clearfix
@@ -388,7 +396,7 @@ body
 				repeat: no-repeat
 				attachment: fixed
 				size: 100% 100%
-			margin-top: 409px
+			margin-top: -190px
 
 
 
