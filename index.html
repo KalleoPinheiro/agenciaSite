@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
     <link rel="stylesheet" href="css/plugins.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
   </head>
   <body>
-
     <nav class="menu-responsivo">
       <ul>
         <li><a href="#inicio" class="scroll">Início</a></li>
@@ -25,7 +23,6 @@
         <li><a href="#orcamento" class="scroll">Orçamento</a></li>
       </ul>
     </nav>
-
     <div class="layout">
       <header>
         <a name= "inicio" id="inicio">
@@ -44,13 +41,11 @@
                     <li><a href="#orcamento" class="scroll">Orçamento</a></li>
                   </ul>
                 </nav>
-
                 <a class="toggle" href="javascript:;">
                   <span></span>
                   <span></span>
                   <span></span>
                 </a>
-
                 <ul class="social">
                   <li>
                     <a href="https://www.youtube.com/user/maisunai" target="blank"><i class="fa fa-youtube fa-2x"></i></a>
@@ -173,20 +168,20 @@
             <h1>Faça um<br>orçamento</h1>
             <div class="formulario">
               <form class="formOrcamento wow fadeInUp">
-              <div class="form-group">
-                <input type="text" class="form-control" id="Nome" placeholder="Nome">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="Email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input type="input" class="form-control" id="Assunto" placeholder="Assunto">
-              </div>
-              <div class="form-group">
-                <textarea type="text" name="comment" class="form-control" id="Menssagem" placeholder="Digite a menssagem aqui..."></textarea>
-              </div>
-              <button type="submit" id="Enviar" class="btn btn-success btn-lg">Enviar</button>
-            </form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="Nome" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="input" class="form-control" id="Assunto" placeholder="Assunto">
+                </div>
+                <div class="form-group">
+                  <textarea type="text" name="comment" class="form-control" id="Menssagem" placeholder="Digite a menssagem aqui..."></textarea>
+                </div>
+                <button type="submit" id="Enviar" class="btn btn-success btn-lg">Enviar</button>
+              </form>
             </div>
           </div>
         </a>
@@ -228,9 +223,28 @@
         </div>
       </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../bower_components/wow/dist/wow.min.js"></script>
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../js/index.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- <script src="../bower_components/wow/dist/wow.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script> -->
+    <script>
+    $('.toggle').click(function(){
+    $('.layout').toggleClass('ativo');
+    $('.menu-responsivo').toggleClass('ativo');
+    $(this).toggleClass('ativo');
+    });
+    $(function(){
+    new WOW().init();
+    });
+    $(document).ready(function($) {
+    $(".scroll").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
+    });
+    });
+    </script>
   </body>
 </html>
