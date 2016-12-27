@@ -107,10 +107,7 @@ body
 		+clearfix
 		min-width: 100%
 		min-height: 800px
-
-		+breakpoint($celular)
-			+clearfix
-			clear: both
+			
 
 		background:
 			image: url("../images/slider_principal.jpg")
@@ -118,12 +115,14 @@ body
 			repeat: no-repeat
 			attachment: fixed
 			size: cover
-		
-		+breakpoint($celular)
-			min-width: 100%
-			min-height: 100%
 
 		+breakpoint($tablet)
+			min-width: 100%
+			min-height: 50%
+		
+		+breakpoint($celular)
+			+clearfix
+			clear: both
 			min-width: 100%
 			min-height: 25%
 		
