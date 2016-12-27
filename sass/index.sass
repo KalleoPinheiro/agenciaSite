@@ -121,7 +121,7 @@ body
 		
 		+breakpoint($celular)
 			min-width: 100%
-			min-height: 50%
+			min-height: 100%
 
 		+breakpoint($tablet)
 			min-width: 100%
@@ -233,7 +233,7 @@ body
 				+breakpoint($celular)
 					+font-size(38px)
 					letter-spacing: 3px
-					line-height: 70px
+					line-height: 40px
 					margin-top: 90px
 
 	footer
@@ -715,13 +715,12 @@ body
 		background-color: $preto
 		min-width: 100%
 		min-height: 500px
-		margin-top: 120px
+		margin-top: 20px
 		
 		h1
 				+clearfix
 				clear: both
-				margin-left: 394px
-				margin-top: 50px
+				margin-left: 417px
 				color: white
 				text-transform: uppercase
 				font-family: Nissan Brand Light
@@ -729,17 +728,19 @@ body
 
 		.seta-08
 			+clearfix
-			min-width: 331px
-			min-height: 500px
+			+flexbox
+			+align-items(center)
 			clear: both
-			float: left
+			// float: left
+			min-width: 20px
+			min-height: 100px
 			background:
 				image: url("../images/seta-08.png")
 				position: center top
 				repeat: no-repeat
-			position: absolute
-			margin-left: 240px
-			margin-top: -205px
+			// position: absolute
+			// margin-left: 240px
+			margin-top: -40px
 
 			+breakpoint($celular)
 				margin-left: 5px
@@ -749,9 +750,10 @@ body
 		.formOrcamento
 			width: 300px
 			height: auto
-			margin-left: auto 
+			margin-left: auto
 			margin-right: auto
-			margin-top: 30px
+
+
 
 		h1
 			+breakpoint($tablet)
