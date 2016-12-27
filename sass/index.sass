@@ -191,6 +191,19 @@ body
 							text-transform: lowercase
 							font-size: 30px
 
+							&:hover
+								&:after
+									width: 100%
+
+							&:after
+								content: ""
+								display: table
+								margin: 5px auto 0 
+								width: 0%
+								height: 2px
+								background-color: $azul-claro
+								+transition(.3s)
+
 						+breakpoint($tablet)
 							font-size: 20px
 
@@ -732,15 +745,12 @@ body
 			+flexbox
 			+align-items(center)
 			clear: both
-			// float: left
 			min-width: 20px
 			min-height: 100px
 			background:
 				image: url("../images/seta-08.png")
 				position: center top
 				repeat: no-repeat
-			// position: absolute
-			// margin-left: 240px
 			margin-top: -40px
 
 			+breakpoint($celular)
@@ -762,6 +772,8 @@ body
 	
 			+breakpoint($tablet)
 				margin-left: 0px
+
+
 
 
 
