@@ -148,17 +148,6 @@
               <img src="images/equipeMais.JPG" alt="Equipe mais - Agência Mais" class="img-responsive wow tada">
             </div>
             <br>
-            <h1>Como nos encontrar</h1>
-            <div class="seta-07">
-            </div>
-            <br>
-            <p>Estamos localizados na cidade de Unaí MG, exatamente na rua Juvêncio Correio, nº 331.
-              Venha nos prestigiar com sua presença e conheça nossos serviços, escritório, equipe e nosso trabalho! Venha conferir....
-            </p>
-          </div>
-          <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.1565515961488!2d-46.90768197922637!3d-16.35800510357068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f38336c0d8f17f8!2zTWFpcyBDb211bmljYcOnw6Nv!5e0!3m2!1spt-BR!2sbr!4v1481744740666" width="1920" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div><br>
         </a>
       </section>
       
@@ -186,6 +175,23 @@
             </div>
           </div>
         </a>
+      </section>
+      <section class="mapa">
+        <div class="container">
+          <h1>Como nos encontrar</h1>
+          <!-- <div class="seta-07">
+          </div> -->
+          <br>
+          <p>Estamos localizados na cidade de Unaí MG, exatamente na rua Juvêncio Correio, nº 331.
+            Venha nos prestigiar com sua presença e conheça nossos serviços, escritório, equipe e nosso trabalho! Venha conferir....
+          </p>
+        </div>
+        <div class="mapa">
+          <div class='embed-container maps'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.1565515961488!2d-46.90768197922637!3d-16.35800510357068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f38336c0d8f17f8!2zTWFpcyBDb211bmljYcOnw6Nv!5e0!3m2!1spt-BR!2sbr!4v1481744740666"  center="-16.357355,-46.908135,19" width="1583" height="700" zoom= "10" frameborder="0" scrollwheel="false" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <br>
       </section>
       <footer>
         <div class="container">
@@ -245,6 +251,14 @@
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
     });
+    });
+
+    $('.maps').click(function () {
+      $('.maps iframe').css("pointer-events", "auto");
+    });
+
+    $( ".maps" ).mouseleave(function() {
+      $('.maps iframe').css("pointer-events", "none"); 
     });
     </script>
   </body>
