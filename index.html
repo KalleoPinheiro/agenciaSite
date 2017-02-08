@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Agências de comunicação especializada na marketing, propaganda, jornalismo, criação de sites e redes sociais, marketing digital, tudo isso você encontra aqui, em Unaí Minas Gerais e Noroeste Mineiro">
-    <meta name="keywords" content="aAgência Mais, agências de publicidade, Unaí Mg, sites, jornalismo, notícias, band triângulo, band, marketing digital, sites, marketing, propaganda, painéis de led">
+    <meta name="keywords" content="Agência Mais, agências de publicidade, Unaí Mg, sites, jornalismo, notícias, band triângulo, band, marketing digital, sites, marketing, propaganda, painéis de led">
     <meta name="author" content="Kalléo Pinheiro">
     <title>Agência Mais Comunicações</title>
     <link rel="icon" href="favicon.png">
@@ -148,6 +148,7 @@
               <img src="images/equipeMais.JPG" alt="Equipe mais - Agência Mais" class="img-responsive wow tada">
             </div>
             <br>
+          </div>
         </a>
       </section>
       
@@ -158,10 +159,16 @@
             <h1>Faça um<br>orçamento</h1>
             <div class="formulario">
               <form class="formOrcamento wow fadeInUp" action="http://formmail.kinghost.net/formmail.cgi" method="POST" accept-charset="utf-8">
-              <input type="hidden" name="recipient" value="ilha@vitrinemais.tv"> <!-- Pode ser qualquer endereço de email -->
-              <input type="hidden" name="redirect" value="http://www.agromais.tv/agenciaSite/index.html"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+              <input type="hidden" name="recipient" value="site@vitrinemais.tv"> <!-- Pode ser qualquer endereço de email -->
+              <input type="hidden" name="redirect" value="http://www.agromais.tv/agencia/ok.html"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
               <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
               <input type="hidden" name="email" value="site@vitrinemais.tv">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+                
+                <!-- <span type="hidden" style="line-height: 1.5; font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;">[/showhide]</span>
+
+                <% set mail = server.createobject("jmail.message") mail.fromname = "Script de envio de emails ASP" mail.from = "kalleo@vitrinemais.tv" 'Este email deve ser válido e existir como conta de email para o domínio mail.addrecipient "site@vitrinemais.tv", "Contato do site" mail.subject = "Assunto do email" mail.body = "Este é um email teste" 'Enviando o email mail.send ("smtp-web.kinghost.net") %>
+                 -->
+
                 <div class="form-group">
                   <input type="text" class="form-control" required name="nome" placeholder="Nome (Obrigatório)">
                 </div>
@@ -175,7 +182,7 @@
                   <input type="input" class="form-control" required name="assunto" placeholder="Assunto">
                 </div>
                 <div class="form-group">
-                  <textarea type="text" name="comment" class="form-control" required name="mensagem" placeholder="Digite a menssagem aqui..."></textarea>
+                  <textarea type="text" name="comment" class="form-control" required name="Comentarios" placeholder="Digite a menssagem aqui..."></textarea>
                 </div>
                 <div class="col-md-12">
                   <input type="submit" class="btn btn-primary btn-lg col-md-6" name="BTEnvia" value="Enviar">
@@ -275,4 +282,3 @@
     </script>
   </body>
 </html>
-

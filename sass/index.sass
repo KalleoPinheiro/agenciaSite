@@ -709,7 +709,12 @@ body
 	
 			+breakpoint($tablet)
 				margin-left: 0px
+		
+		.col-md-12
+			padding: 0px
 
+		.col-md-6
+			padding: 10px
 	
 	section.mapa
 		margin-bottom: -24px		
@@ -787,6 +792,48 @@ body
 		// +breakpoint($tablet)
 		// 	margin-left: 5px
 
+	
+	section.confirmaEmail
+		+clearfix
+		min-width: 100%
+		min-height: 800px
+		background:
+			image: url("../images/slider_principal_OK.jpg")
+			position: top center
+			repeat: no-repeat
+			attachment: fixed
+			size: cover
+
+
+		.caixa
+			background-color: rgba(255, 255, 255, 0.850)
+			display: table
+			border: 1px solid
+			// margin-left: 700px
+			// margin-right: 200px
+			margin-top: 500px
+			padding: 2px
+			+flexbox
+			+justify-content(space-between)
+			+align-items(center)
+			
+			p
+				padding: 20px
+				color: $preto
+				text-align: left
+				+font-size(30px)
+				
+				margin-top: 25px
+				margin-bottom: 50px
+
+				+breakpoint($tablet)
+						margin-left: 200px
+		
+				+breakpoint($tablet)
+					margin-left: 0px
+
+				strong
+					font-weight: bold
 
 
 				
