@@ -157,7 +157,11 @@
             <div class="seta-08"></div>
             <h1>Faça um<br>orçamento</h1>
             <div class="formulario">
-              <form class="formOrcamento wow fadeInUp" action="index.php" method="POST" accept-charset="utf-8">
+              <form class="formOrcamento wow fadeInUp" action="http://formmail.kinghost.net/formmail.cgi" method="POST" accept-charset="utf-8">
+              <input type="hidden" name="recipient" value="ilha@vitrinemais.tv"> <!-- Pode ser qualquer endereço de email -->
+              <input type="hidden" name="redirect" value="http://www.agromais.tv/agenciaSite/index.html"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+              <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+              <input type="hidden" name="email" value="site@vitrinemais.tv">   <!-- Deve ser uma conta de email ativa em seu domínio -->
                 <div class="form-group">
                   <input type="text" class="form-control" required name="nome" placeholder="Nome (Obrigatório)">
                 </div>
